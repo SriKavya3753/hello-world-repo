@@ -13,6 +13,13 @@ jobs:
       - name: List Repo Files
         run: ls -ltra
 
+      - name: Show Current Directory
+        run: |
+          echo "Current Directory: "
+          pwd
+          echo "Contents of Current Directory: "
+          ls -la
+
       - name: Executing Shell Script
         run: |
           chmod +x ascii-script.sh 
